@@ -28,10 +28,7 @@ export default class Logo extends Component {
           placeholderTextColor="#ffffff"
           ref={(input) => (this.password = input)}
         />
-        <TouchableOpacity
-          style={styles.button}
-          //onPress={this.props.onAuthButtonPress}
-        >
+        <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>{this.props.type}</Text>
         </TouchableOpacity>
       </View>
@@ -59,8 +56,8 @@ const styles = StyleSheet.create({
     width: 300,
     backgroundColor: "#1c313a",
     borderRadius: 15,
-    marginVertical: 10,
-    paddingVertical: 13,
+    marginVertical: 15,
+    paddingVertical: 10,
   },
   buttonText: {
     fontSize: 16,
